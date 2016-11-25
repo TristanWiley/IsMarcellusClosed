@@ -20,7 +20,11 @@ a{
 a:hover{
  	color: #4b1811;}
 
-
+.adcontainter {
+position: fixed;
+bottom: 0;
+width: 100%;
+}
 .download a{
  	padding: .095em .8em;
  	background: url(../img/arrow.png) no-repeat;
@@ -115,15 +119,15 @@ h1 {
 			#1a4362 .1em .1em 0;
 
     position: fixed;
-        top: 40%;
+        top: 50%;
         left: 50%;
         /* bring your own prefixes */
         transform: translate(-50%, -50%);
 }
 h2 {
 	text-align: center;
-	position: fixed;
-        top: 70%;
+	position: absolute;
+        top: 0;
         left: 50%;
         /* bring your own prefixes */
         transform: translate(-50%, -50%);
@@ -131,7 +135,7 @@ h2 {
 h3 {
 	text-align: center;
 	position: fixed;
-        top: 92%;
+        top: 1;
         left: 50%;
         /* bring your own prefixes */
         transform: translate(-50%, -50%);
