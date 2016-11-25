@@ -1,6 +1,6 @@
 var isClosed = false;
 $.ajax({
-    url: 'http://ismarcellusclosed.com/Closings.html',
+    url: 'Closings.html',
     success: function(data) {
         $(data).find(".orgname").each(function() {
             var schoolName = this.innerText;
