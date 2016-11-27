@@ -1,6 +1,6 @@
 var isClosed = false;
 $.ajax({
-    url: 'Closings.html',
+    url: 'http://cnycentral.com/resources/ftptransfer/wstm/closings/closings.htm',
     success: function(data) {
         $(data).find(".orgname").each(function() {
             var schoolName = this.innerText;

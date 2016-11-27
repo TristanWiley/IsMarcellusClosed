@@ -12,3 +12,199 @@ body {
 .love {
     text-align: center;
 }
+
+@import url(http://fonts.googleapis.com/css?family=Mountains+of+Christmas:700);
+
+.Absolute-Center {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 30px;
+}
+
+/***************************
+
+BEGIN SNOWMAN
+
+A simple animation using pngs.  This could have been done with SVGs too.  Left it with PNGs to make it simpler.
+You can make this more respsonsive by simply using Media Queries and the scale tramsform property set to the div.
+I just didn't time as it is, after all,  Christmas in New Orleans.  :)
+
+***************************/
+
+
+#SnowMan {
+	width: 250px;
+	height: 525px;
+	z-index: 500;
+}
+
+
+
+.HeadAnimate {
+	position: absolute;
+	z-index: 500;
+	top: 0;
+	left: 75px;
+	animation: Happy_Snowman 3s infinite;
+	-moz-animation: Happy_Snowman 3s infinite;
+	-webkit-animation: Happy_Snowman 3s infinite;
+}
+ @keyframes Happy_Snowman {
+ 0% {
+transform: rotate(0deg);
+}
+ 25% {
+transform: rotate(10deg);
+}
+ 50% {
+transform: rotate(0deg);
+}
+ 75% {
+transform: rotate(-10deg);
+}
+ 100% {
+transform: rotate(0deg);
+}
+}
+ @-moz-keyframes Happy_Snowman {
+ 0% {
+-moz-transform: rotate(0deg);
+}
+ 25% {
+-moz-transform: rotate(10deg);
+}
+ 50% {
+-moz-transform: rotate(0deg);
+}
+ 75% {
+-moz-transform: rotate(-10deg);
+}
+ 100% {
+-moz-transform: rotate(0deg);
+}
+}
+ @-webkit-keyframes Happy_Snowman {
+ 0% {
+-webkit-transform: rotate(0deg);
+}
+ 25% {
+-webkit-transform: rotate(10deg);
+}
+ 50% {
+-webkit-transform: rotate(0deg);
+}
+ 75% {
+-webkit-transform: rotate(-10deg);
+}
+ 100% {
+-webkit-transform: rotate(0deg);
+}
+}
+.BodyAnimate {
+	position: absolute;
+	z-index: 400;
+	bottom: 0;
+	animation: bottom_animation 3s infinite;
+	-moz-animation: bottom_animation 3s infinite;
+	-webkit-animation: bottom_animation 3s infinite;
+}
+ @keyframes bottom_animation {
+ 0% {
+transform: rotate(0deg);
+}
+ 25% {
+transform: rotate(-3deg);
+}
+ 50% {
+transform: rotate(0deg);
+}
+ 75% {
+transform: rotate(3deg);
+}
+ 100% {
+transform: rotate(0deg);
+}
+}
+ @-moz-keyframes bottom_animation {
+ 0% {
+-moz-transform: rotate(0deg);
+}
+ 25% {
+-moz-transform: rotate(-3deg);
+}
+ 50% {
+-moz-transform: rotate(0deg);
+}
+ 75% {
+-moz-transform: rotate(3deg);
+}
+ 100% {
+-moz-transform: rotate(0deg);
+}
+}
+ @-webkit-keyframes bottom_animation {
+ 0% {
+-webkit-transform: rotate(0deg);
+}
+ 25% {
+-webkit-transform: rotate(-3deg);
+}
+ 50% {
+-webkit-transform: rotate(0deg);
+}
+ 75% {
+-webkit-transform: rotate(3deg);
+}
+ 100% {
+-webkit-transform: rotate(0deg);
+}
+}
+ @-webkit-keyframes blink {
+ 90% {
+ -webkit-transform: none;
+ transform: none;
+}
+ 95% {
+ -webkit-transform: rotateX(90deg);
+ transform: rotateX(90deg);
+}
+}
+ @keyframes blink {
+ 90% {
+ -webkit-transform: none;
+ transform: none;
+}
+ 95% {
+ -webkit-transform: rotateX(90deg);
+ transform: rotateX(90deg);
+}
+}
+.eye {
+	display: inline-block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: #000;
+	color: #000;
+	border-radius: 50%;
+	top: 100px;
+	-webkit-animation: blink 5s ease-in-out infinite;
+	animation: blink 5s ease-in-out infinite;
+}
+.eye.left {
+	top: 120px;
+	left: 60px;
+	z-index: 600;
+}
+.eye.right {
+	top: 110px;
+	left: 105px;
+	z-index: 600;
+}
+
+/***************************
+
+END CSS SSNOWMAN
+
+***************************/
