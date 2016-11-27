@@ -4,6 +4,16 @@ body {
     color: white;
 }
 
+@font-face {
+    font-family: NOPEFont;
+    src: url(http://ismarcellusclosed.com/DSSnowfall.ttf);
+    font-weight: 400;
+}
+
+.isclosed {
+    font-family: NOPEFont;
+}
+
 .isskan {
     width: 100%;
     text-align: center;
@@ -20,6 +30,8 @@ body {
     left: 0;
     margin: 30px;
 }
+
+
 
 
 /***************************
