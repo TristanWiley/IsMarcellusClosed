@@ -1,5 +1,4 @@
 var isClosed = false;
-$(function() {
     $.ajax({
         url: 'closings.html',
         success: function(data) {
@@ -9,7 +8,8 @@ $(function() {
                 if (schoolName.indexOf('Marcellus') >= 0) {
                     if (schoolName.includes("Delayed")) {
                         console.log("Delayed");
-                        $('h1').text("Delayed!");
+                        isClosed = true;
+                        $('.isclosed').text("Delayed!");
                     } else {
                         isClosed = true;
                         console.log("Closed");
@@ -28,4 +28,3 @@ $(function() {
             }
         }
     });
-});
