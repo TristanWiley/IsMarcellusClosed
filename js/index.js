@@ -5,15 +5,15 @@ $.ajax({
         $(data).find("tr").each(function() {
             var schoolName = this.innerText;
             console.log(schoolName);
-            if (schoolName.indexOf('Marcellus') >= 0) {
-                isClosed = true;
-                $('.isclosed').text("YES!");
-            }
-            
-            if (schoolName.indexOf('Skaneateles') >= 0) {
-            	console.log("wat");
-            	$('.isskan').text("But Skan is like what the heck...");
-            }
+            // if (schoolName.indexOf('Marcellus') >= 0) {
+            //     isClosed = true;
+            //     $('.isclosed').text("YES!");
+            // }
+
+            // if (schoolName.indexOf('Skaneateles') >= 0) {
+            //     console.log("wat");
+            //     $('.isskan').text("But Skan is like what the heck...");
+            // }
         });
         if (isClosed != true) {
             $('.isclosed').text("NOPE");
