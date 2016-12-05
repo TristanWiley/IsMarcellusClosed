@@ -2,7 +2,7 @@ var isClosed = false;
 $.ajax({
     url: 'closings.html',
     success: function(data) {
-        $(data).find(".orgname").each(function() {
+        $(data).find("tr").each(function() {
             var schoolName = this.innerText;
             console.log(schoolName);
             if (schoolName.indexOf('Marcellus') >= 0) {
