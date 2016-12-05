@@ -31,5 +31,6 @@ $(function() {
 });
 
 function setDelayed() {
+    console.log("This doesn't even make any sense");
     $('.isclosed').text("Delayed!");
 }
