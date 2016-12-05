@@ -6,12 +6,12 @@ $.ajax({
             var schoolName = this.innerText;
             console.log(schoolName);
             if (schoolName.indexOf('Marcellus') >= 0) {
-                // if (schoolName.includes("Delayed")) {
+                if (schoolName.includes("Delayed")) {
                     $('.isclosed').text("Delayed!");                    
-                // } else {
+                } else {
                     isClosed = true;
                     $('.isclosed').text("YES!");
-                // }
+                }
             }
 
             if (schoolName.indexOf('Skaneateles') >= 0) {
