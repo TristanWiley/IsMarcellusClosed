@@ -10,7 +10,6 @@ $(function() {
                     if (schoolName.includes("Delayed")) {
                         console.log("Delayed");
                         var a = $('.isclosed').text("Delayed!");
-                        console.log(a);
                     } else {
                         isClosed = true;
                         console.log("Closed");
