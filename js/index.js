@@ -9,7 +9,7 @@ $(function() {
                 if (schoolName.indexOf('Marcellus') >= 0) {
                     if (schoolName.includes("Delayed")) {
                         console.log("Delayed");
-                        var a = $('.isclosed').val("Delayed!");
+                        $('.isclosed').val("Delayed!");
                     } else {
                         isClosed = true;
                         console.log("Closed");
