@@ -3,7 +3,7 @@ $.ajax({
     url: 'closings.html',
     success: function(data) {
         $(data).find("tr").each(function() {
-            var schoolName = this.innerText;
+            var schoolName = this;
             console.log(schoolName);
             if (schoolName.indexOf('Marcellus') >= 0) {
                 isClosed = true;
