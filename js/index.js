@@ -5,9 +5,13 @@ $.ajax({
         $(data).find("tr").each(function() {
             var schoolName = this.innerText;
             console.log(schoolName);
-            if (schoolName.indexOf('De Soto') >= 0) {
-                isClosed = true;
-                $('.isclosed').text("YES!");
+            if (schoolName.indexOf('Marcellus') >= 0) {
+                if (schoolName.indexOf('Delay') >= 0) {
+                    $('.isclosed').text("Delayed!");                    
+                } else {
+                    isClosed = true;
+                    $('.isclosed').text("YES!");
+                }
             }
 
             if (schoolName.indexOf('Skaneateles') >= 0) {
