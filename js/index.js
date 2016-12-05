@@ -6,7 +6,7 @@ $.ajax({
             var schoolName = this.innerText;
             console.log(schoolName);
             if (schoolName.indexOf('Marcellus') >= 0) {
-                if (schoolName.includes("Delay")) {
+                if (schoolName.includes("Delayed")) {
                     $('.isclosed').text("Delayed!");                    
                 } else {
                     isClosed = true;
