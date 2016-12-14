@@ -4,16 +4,18 @@
 <head>
     <title>Is Marcellus Closed?</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="http://ismarcellusclosed.com/js/index.js"></script>
-    <script src="http://ismarcellusclosed.com/js/snowstorm.js"></script>
-    <link rel="stylesheet" type="text/css" href="http://ismarcellusclosed.com/css/style.css">
+    <script src="js/index.js"></script>
+    <script src="js/snowstorm.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
     <div class="isit">
-        <h1 class="isclosed" style="display:flex;justify-content:center;align-items:center;font-size:300px;">NOPE</h1>
+        <h1 class="isclosed" style="display:flex;justify-content:center;align-items:center;font-size:300px; margin-bottom: 10px;">NOPE</h1>
+        <div class="wintertext count" id="countdown"></div>
+        <h1 class="wintertext">Until school is out for Winter break :)</h1>
         <h3 class="isskan"></h3>
-        <h3 class="love">Made with &#10084; by Tristan Wiley. Fork this on <a href="https://github.com/TristanWiley/IsMarcellusClosed">Github</a></h3>
+        <h3 class="love" style="margin-top: 70px;">Made with &#10084; by Tristan Wiley. Fork this on <a href="https://github.com/TristanWiley/IsMarcellusClosed">Github</a></h3>
     </div>
     <!-- Begin Snowman -->
     <div id="SnowMan" class="Absolute-Center">
@@ -49,6 +51,38 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
+    <script>
+    var end = new Date('12/23/2016 2:20 PM');
+
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var timer;
+
+    function showRemaining() {
+        var now = new Date();
+        var distance = end - now;
+        if (distance < 0) {
+
+            clearInterval(timer);
+            document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+            return;
+        }
+        var days = Math.floor(distance / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+
+        document.getElementById('countdown').innerHTML = days + 'days ';
+        document.getElementById('countdown').innerHTML += hours + 'hrs ';
+        document.getElementById('countdown').innerHTML += minutes + 'mins ';
+        document.getElementById('countdown').innerHTML += seconds + 'secs';
+    }
+
+    timer = setInterval(showRemaining, 1000);
+    </script>
 </body>
 
 </html>
