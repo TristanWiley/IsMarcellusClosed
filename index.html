@@ -11,11 +11,10 @@
 
 <body>
     <div class="ticker-wrap">
-  <div class="ticker">
-    <div class="ticker__item">WE ARE GOING HOME AT EARLY AT 1PM.</div>
-    <div class="ticker__item">100% of students find this sort of ridiculous.</div>
-  </div>
-</div>
+        <div class="ticker">
+            <div class="ticker__item">Congratulations on leaving home early everyone! Now we can hope for a snow day Friday!</div>
+        </div>
+    </div>
     <div class="isit">
         <h1 class="isclosed" style="display:flex;justify-content:center;align-items:center;font-size:300px; margin-bottom: 10px;">NOPE</h1>
         <div class="wintertext count" id="countdown"></div>
@@ -34,60 +33,60 @@
     <!-- // End Snowman -->
     <!--Ads and analytics -->
     <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-87780012-1', 'auto');
-    ga('send', 'pageview');
+        ga('create', 'UA-87780012-1', 'auto');
+        ga('send', 'pageview');
     </script>
     <div style="text-align: center;">
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- Is Marcellus Closed -->
         <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8228328083341151" data-ad-slot="7098614228" data-ad-format="auto"></ins>
         <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
+            (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
     <script>
-    var end = new Date('12/23/2016 2:20 PM');
+        var end = new Date('12/23/2016 2:20 PM');
 
-    var _second = 1000;
-    var _minute = _second * 60;
-    var _hour = _minute * 60;
-    var _day = _hour * 24;
-    var timer;
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
 
-    function showRemaining() {
-        var now = new Date();
-        var distance = end - now;
-        if (distance < 0) {
+        function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
 
-            clearInterval(timer);
-            document.getElementById('countdown').innerHTML = 'EXPIRED!';
+                clearInterval(timer);
+                document.getElementById('countdown').innerHTML = 'EXPIRED!';
 
-            return;
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+
+            document.getElementById('countdown').innerHTML = days + 'days ';
+            document.getElementById('countdown').innerHTML += hours + 'hrs ';
+            document.getElementById('countdown').innerHTML += minutes + 'mins ';
+            document.getElementById('countdown').innerHTML += seconds + 'secs';
         }
-        var days = Math.floor(distance / _day);
-        var hours = Math.floor((distance % _day) / _hour);
-        var minutes = Math.floor((distance % _hour) / _minute);
-        var seconds = Math.floor((distance % _minute) / _second);
 
-        document.getElementById('countdown').innerHTML = days + 'days ';
-        document.getElementById('countdown').innerHTML += hours + 'hrs ';
-        document.getElementById('countdown').innerHTML += minutes + 'mins ';
-        document.getElementById('countdown').innerHTML += seconds + 'secs';
-    }
-
-    timer = setInterval(showRemaining, 1000);
+        timer = setInterval(showRemaining, 1000);
     </script>
 </body>
 
