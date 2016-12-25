@@ -12,24 +12,98 @@
 <body>
     <div class="ticker-wrap">
         <div class="ticker">
-            <div class="ticker__item">Just about break!</div>
+            <div class="ticker__item">Happy Winter break everyone!</div>
         </div>
     </div>
     <div class="isit">
         <h1 class="isclosed" style="display:flex;justify-content:center;align-items:center;font-size:300px; margin-bottom: 10px;">NOPE</h1>
-        <div class="wintertext count" id="countdown"></div>
-        <h1 class="wintertext">Until school is out for Winter break :)</h1>
+        <h1 class="wintertext">Happy break y'all :)</h1>
         <h3 class="isskan"></h3>
         <h3 class="love" style="margin-top: 70px;">Made with &#10084; by Tristan Wiley. Fork this on <a href="https://github.com/TristanWiley/IsMarcellusClosed">Github</a></h3>
     </div>
+    <div class="fox Absolute-Center">
+  <div class="leg-outer">
+    <div class="leg">
+      <div class="paw">
+        <div class="log">
+          <div class="log-inner">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="leg-outer">
+    <div class="leg">
+      <div class="paw">
+        <div class="log">
+          <div class="log-inner"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hind-leg-outer">
+    <div class="hind-leg-outer2">
+      <div class="hind-paw">
+        <div class="hind-log">
+          <div class="hind-log-inner">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hind-leg-outer">
+    <div class="hind-leg-outer2">
+      <div class="hind-paw">
+        <div class="hind-log">
+          <div class="hind-log-inner">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="body">
+    <div class="head">
+      <div class="ears">
+        <div class="ear"></div>
+        <div class="ear"></div>
+      </div>
+      <div class="face"></div>
+      <div class="snout"></div>
+    </div>
+    <div class="tail">
+      <div class="tail">
+        <div class="tail">
+          <div class="tail">
+            <div class="tail">
+              <div class="tail">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tail2">
+        <div class="tail">
+          <div class="tail">
+            <div class="tail">
+              <div class="tail">
+                <div class="tail">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Begin Snowman -->
-    <div id="SnowMan" class="Absolute-Center">
+    <!-- <div id="SnowMan" class="Absolute-Center">
         <div class="HeadAnimate">
             <div class="eye left"></div>
             <div class="eye right"></div>
             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/191814/SnowManHead.png"></div>
         <img class="BodyAnimate" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/191814/SMbody.png">
-    </div>
+    </div> -->
     <!-- // End Snowman -->
     <!--Ads and analytics -->
     <script>
@@ -56,38 +130,7 @@
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
-    <script>
-        var end = new Date('12/23/2016 2:20 PM');
 
-        var _second = 1000;
-        var _minute = _second * 60;
-        var _hour = _minute * 60;
-        var _day = _hour * 24;
-        var timer;
-
-        function showRemaining() {
-            var now = new Date();
-            var distance = end - now;
-            if (distance < 0) {
-
-                clearInterval(timer);
-                document.getElementById('countdown').innerHTML = 'EXPIRED!';
-
-                return;
-            }
-            var days = Math.floor(distance / _day);
-            var hours = Math.floor((distance % _day) / _hour);
-            var minutes = Math.floor((distance % _hour) / _minute);
-            var seconds = Math.floor((distance % _minute) / _second);
-
-            document.getElementById('countdown').innerHTML = days + 'days ';
-            document.getElementById('countdown').innerHTML += hours + 'hrs ';
-            document.getElementById('countdown').innerHTML += minutes + 'mins ';
-            document.getElementById('countdown').innerHTML += seconds + 'secs';
-        }
-
-        timer = setInterval(showRemaining, 1000);
-    </script>
 </body>
 
 </html>

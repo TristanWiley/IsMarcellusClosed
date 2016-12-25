@@ -1,4 +1,5 @@
 var isClosed = false;
+var breakOverride = true;
     $.ajax({
         url: 'http://cnycentral.com/resources/ftptransfer/wstm/closings/closings.htm',
         success: function(data) {
@@ -25,6 +26,9 @@ var isClosed = false;
             if (isClosed != true) {
                 $('.isclosed').text("NOPE");
                 $('.sub').text("You have to go to school.")
+            }
+            if (breakOverride == true){
+                $('.isclosed').text("BREAK");                
             }
         }
     });
