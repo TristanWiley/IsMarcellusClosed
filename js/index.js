@@ -1,5 +1,5 @@
 var isClosed = false;
-var breakOverride = true;
+var breakOverride = false;
     $.ajax({
         url: 'http://cnycentral.com/resources/ftptransfer/wstm/closings/closings.htm',
         success: function(data) {
