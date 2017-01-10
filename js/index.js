@@ -11,6 +11,10 @@ var breakOverride = false;
                         console.log("Delayed");
                         isClosed = true;
                         $('.isclosed').text("Delayed!");
+                    } else if(schoolName.includes("after-school") || schoolName.includes("after school")){
+                        console.log("No after school activities");
+                        isClosed = false;
+                        $("#after-school").text("No after school activities");
                     } else {
                         isClosed = true;
                         console.log("Closed");
