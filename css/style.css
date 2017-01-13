@@ -96,7 +96,7 @@ body {
   -webkit-animation-name: ticker;
   animation-name: ticker;
   -webkit-animation-duration: 20s;
-  animation-duration: 11s;
+  animation-duration: 15s;
 }
 .ticker__item {
   display: inline-block;
