@@ -74,6 +74,7 @@ body {
 }
 .ticker-wrap {
   position: fixed;
+  display: -webkit-box;
   top: 0;
   width: 100%;
   overflow: hidden;
@@ -95,7 +96,7 @@ body {
   -webkit-animation-name: ticker;
   animation-name: ticker;
   -webkit-animation-duration: 20s;
-  animation-duration: 20s;
+  animation-duration: 11s;
 }
 .ticker__item {
   display: inline-block;
