@@ -20,11 +20,10 @@ var breakOverride = false;
                         console.log("Closed");
                         $('.isclosed').text("YES!");
                     }
-                }
-
                 if (schoolName.indexOf('Skaneateles') >= 0 && !schoolName.includes("after-school")) {
                     console.log("wat");
                     $('.isskan').text("But Skan is like what the heck...");
+                }
                 }
             });
             if (isClosed != true) {
